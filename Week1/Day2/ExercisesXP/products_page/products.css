@@ -1,0 +1,84 @@
+.hover-icons {
+    top: 40%;
+    right: 22%;
+    position: absolute;
+    padding: 20px;
+}
+
+.background-icon {
+    display: inline-block;
+    margin: 10px;
+    background-color: white;
+    padding: 5px;
+    visibility: hidden;
+}
+
+.container:hover .background-icon {
+    visibility: visible;
+}
+
+.container {
+    position: relative
+}
+
+.container > .new-icon {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 10%;
+    width: 10%;
+}
+
+.container > .discount-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 15%;
+    width: 15%;
+}
+
+.shopping-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.shopping-item {
+    display: inline-block;
+    height: 100%;
+    width: 22%;
+    margin: 20px;
+}
+
+.shopping {
+    height: 60vh;
+    max-width: 100%;
+    margin-bottom: 20vh;
+    margin-left: 30px;
+}
+
+.position-text, .item-text {
+    text-align: center;
+
+}
+
+.price {
+    color: green;
+    display: inline;
+    margin-right: 10px;
+
+}
+
+button {
+    margin-left: 35%;   
+    margin-top: 10px;
+    display: block;
+    padding: 10px;  
+    background-color: transparent;
+    color: grey;
+}
+
+.old-price {
+    color: grey;
+    text-decoration: line-through;
+    display: inline;
+}
