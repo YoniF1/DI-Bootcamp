@@ -1,0 +1,31 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 25% 75%;
+    gap: 20px 20px;
+}
+
+.item {
+    border: 2px solid black;
+}
+
+.one {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.one, .three, .five {
+    background-color: coral;
+}
+
+.two, .four, .six {
+    background-color: lightblue;
+}
+
+.seven {
+    background-color: yellow;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
