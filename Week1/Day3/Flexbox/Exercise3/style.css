@@ -1,0 +1,35 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    height: 10%;
+    width: 30%;
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.one {
+    background-color: blue;
+    flex: 1;
+}
+
+.two {
+    background-color: lightblue;
+    flex: 4;
+
+}
+
+.three {
+    background-color: lightcoral;
+    flex: 4;
+}

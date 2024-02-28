@@ -1,0 +1,25 @@
+.container {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    height: 20%;
+    margin: 5px;
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.one, .three {
+    width: 75%;
+    align-self: center;
+}
+
+
+
