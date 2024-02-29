@@ -6,29 +6,76 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="row mt-10">
-          <div class="col-4">
-            <div class="offcanvas offcanvas-start bg-light" id="offcanvas" aria-labelledby="offcanvasLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasLabel">Some favourites</h5>
-                </div>
-                <div class="offcanvas-body">
+          <div class="col-3">
+            <div class="offcanvas offcanvas-start bg-light d-flex flex-column align-items-center border" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-body mt-4 mb-4">
                     <ul>
-                        <li>Celery Roots</li>
-                        <li>Spaghetti Squash</li>
-                        <li>Killer Mushrooms</li>
+                        <li class="text-secondary">SOME FAVOURITES</li>
+                        <li><a href="">Celery Roots</a></li>
+                        <li><a href="">Spaghetti Squash</a></li>
+                        <li><a href="">Killer Mushrooms</a></li>
                     </ul>
+                    <form class="">
+                      <input type="text" class="form-control" id="first-name">
+                      <button type="submit" class="btn btn-primary">Search Recipes</button>
+                    </form>
                 </div>
               </div>
           </div>
           <div class="col-8">
+            <div class="alert alert-danger" role="alert">
+              Uh oh! have you had your daily dose of veggies today?
+            </div>
             <h1>Wild and Wacky Vegetables</h1>
+            <figure>
+              <blockquote class="blockquote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nulla suscipit dignissimos facere enim maxime est debitis magnam id dolore fugiat ex eligendi minima soluta molestias, voluptatem commodi numquam incidunt.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore veniam officiis suscipit! Vel voluptatum molestias suscipit architecto, vitae minima voluptas nobis quaerat nesciunt excepturi id quo maxime inventore eos!</p>
+              </blockquote>
+              <figcaption class="blockquote-footer" >
+                  Tom Robbins
+              </figcaption>
+            </figure>
+
+            <h1>Some diseases</h1>
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Veggies</th>
+                  <th scope="col">Disease</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Beets</td>
+                  <td>Beeturia</td>
+                </tr>
+                <tr>
+                  <td>Carrots</td>
+                  <td>Carotenosis</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="images mb-4">
+              <img class="border" src="./images/Carrots.jpeg" alt="">
+              <img class="border p-2" src="./images/beetroot.jpeg" alt="">
+              <img class="border p-2" src="./images/asparagus.jpeg" alt="">
+            </div>
+
+            <h1>Really informative info</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sit dolorem est maxime doloribus soluta eveniet tenetur earum, corporis vel laudantium amet tempore. Pariatur laborum dolorum praesentium? Quae, ea quos.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus atque, magnam distinctio quibusdam sapiente et perspiciatis temporibus laboriosam reprehenderit, adipisci eius eligendi repellat tenetur quia! Similique commodi ipsam pariatur?</p>
           </div>
         </div>
-    </div>
+      </div>
     
 </body>
 </html>

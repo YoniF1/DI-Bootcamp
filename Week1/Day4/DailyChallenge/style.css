@@ -1,0 +1,17 @@
+figure {
+    border-left: 5px solid lightgray;
+    padding-left: 10px;
+}
+
+.blockquote-footer {
+    font-size: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.images > img {
+    display: inline-block;
+    max-width: 30%;
+}
