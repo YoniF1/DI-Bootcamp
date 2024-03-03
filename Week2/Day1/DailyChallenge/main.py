@@ -1,3 +1,5 @@
+import random
+
 user_input = input("Please give a string: ")
 
 length = len(user_input)
@@ -8,28 +10,15 @@ elif length > 10:
     print("string is too long")
 else:
     print("perfect string")
+    print("The first char is {} and last char is {}".format(user_input[0], user_input[-1]))
 
-# OR
+    final_string = ""
+    for i in user_input:
+        final_string += i
+        print(final_string)
 
-# count = 0
+    ls = list(final_string)
+    random.shuffle(ls)
+    shuffled_string = ''.join(ls)
 
-# for i in user_input:
-#     count += 1
-
-# if count < 10:
-#     print("string is not long enough")
-# elif count > 10:
-#     print("string is too long")
-# else:
-#     print("perfect string")
-
-
-print(user_input[0])
-print(user_input[-1])
-
-final_string = ""
-for i in user_input:
-    final_string += i
-    print(final_string)
-
-p
+    print(shuffled_string)
