@@ -31,12 +31,8 @@ print(d)
 # Accept a number from the user and print its multiplication table
 user_number = int(input("Give me a number: "))
 
-numbers = list(range(1, 11))
-
-for num in numbers:
-    multiple = num * user_number
-    print(multiple)
-
+for num in range(1, 11):
+    print(num * user_number)
 
 # Print the numbers from 1 to 10 using while loop
 i = 0 
