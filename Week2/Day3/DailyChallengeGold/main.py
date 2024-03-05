@@ -1,6 +1,6 @@
-choice = input("You want to encrypt or decrypt?")
+choice = input("You want to encrypt or decrypt? ")
 message = input("Enter your message: ")
-shift = input("Enter the shift amount")
+shift = input("Enter the shift amount ")
 
 def encrypt(message, shift):
     cypher_text = ""
