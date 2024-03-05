@@ -26,23 +26,18 @@ def calculate_affordable_items(items_purchase, wallet):
     for k, v in items_purchase.items():
         items_purchase[k] = int(v)
 
-    clean_wallet = re.sub(r'[^0-9]', '', wallet)
-    clean_wallet = int(clean_wallet)
+    clean_wallet = int(re.sub(r'[^0-9]', '', wallet))
 
     for k, v in items_purchase.items():
         if v < clean_wallet and total_cost < clean_wallet:
             affordable_items.append(k)
             total_cost += v
-        else:
-            continue
 
     affordable_items.sort()
-
-    if not affordable_items:
-        print ("Nothing")
-    else:
+    if affordable_items:
         print(affordable_items)
-
+    else:
+        print ("Nothing")
 
 items_purchase_collection = [
     {
@@ -67,16 +62,8 @@ items_purchase_collection = [
     },
     ]
 
-wallet = "$300"
-calculate_affordable_items(items_purchase_collection[0], wallet )
-wallet = "$100"
-calculate_affordable_items(items_purchase_collection[1], wallet)
-wallet = "$1"
-calculate_affordable_items(items_purchase_collection[2], wallet)
+wallet = "".join(('$', input("How much money do you have in your wallet?: ")))
 
-
-
-
-
-
+for items_purchase in items_purchase_collection:
+    calculate_affordable_items(items_purchase, wallet)
   
