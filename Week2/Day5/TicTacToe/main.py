@@ -20,6 +20,8 @@ map_move = {
     9: [2, 2],
 }
 
+size_of_board = len(game_board)
+
 player_symbols = {
     0: 'X',
     1: 'O'
@@ -75,28 +77,28 @@ def check_rows(player_symbol):
         for col in row:
            if col == player_symbol:
              count += 1
-        if count == len(game_board):
+        if count == size_of_board:
             print(f"{player_symbol}'s have won! Congratulations")
             return True 
     return False
 
 def check_columns(player_symbol):
-    for col in range(len(game_board)):
+    for col in range(size_of_board):
         count = 0
-        for row in range(len(game_board)):
+        for row in range(size_of_board):
             if game_board[row][col] == player_symbol:
                 count += 1
-        if count == len(game_board):
+        if count == size_of_board:
             print(f"{player_symbol}'s have won! Congratulations")
             return True
     return False
 
 def check_diagonals(player_symbol):
     count = 0
-    for i in range(len(game_board)):
-        if game_board[i][i] == player_symbol or game_board[i][len(game_board) - 1 - i] == player_symbol:
+    for i in range(size_of_board):
+        if game_board[i][i] == player_symbol or game_board[i][size_of_board- 1 - i] == player_symbol:
             count+=1
-    if count == len(game_board):
+    if count == size_of_board:
         print(f"{player_symbol}'s have won! Congratulations")
         return True
     return False
