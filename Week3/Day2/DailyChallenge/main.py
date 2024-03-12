@@ -20,7 +20,10 @@ class Pagination():
 
     def lastPage(self):
         remaining = self.size % self.pageSize
-        self.start_index = self.size - remaining
+        if remaining == 0:
+            self.start_index = self.size - self.pageSize
+        else:
+            self.start_index = self.size - remaining
         self.end_index = self.size
 
     def goToPage(self, pageNum):
@@ -28,7 +31,7 @@ class Pagination():
         self.end_index = pageNum * self.pageSize
 
 
-alphabetList = list("abcdefghijklmnopqrstuvwxyz")
+alphabetList = list("abcdwrefreferfewfefghijk")
 
 p = Pagination(alphabetList, 4)
 
