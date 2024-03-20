@@ -1,0 +1,10 @@
+/myenv/*
+
+!/myenv/config.py
+!/myenv/configxp.py
+!/myenv/menu_editor.py
+!/myenv/menu_item.py
+!/myenv/menu_manager.py
+!/myenv/menu_items.sql
+
+
